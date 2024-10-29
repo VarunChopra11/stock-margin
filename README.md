@@ -39,7 +39,21 @@ To use the functions, ensure your environment is configured as follows:
 
 2. Configure environment variables by creating a .env file and providing your API access token.
 
+3. Run the scripts:
+     ```
+       from calculate_margin_and_premium import calculate_margin_and_premium
+       from get_option_chain import getOptionchain
+
 ## Environment Variables Example:
+   Create an .env file in the project root with the following structure:
 
        UPSTOX_ACCESS_TOKEN=your_access_token_here
+
+
+## Dependencies:
+   All dependencies are listed in requirements.txt. Key libraries include:
+   
+   *  requests: For API requests.
+   *  pandas: For data manipulation.
+   *  xlwings: For exporting data to Excel.
 
